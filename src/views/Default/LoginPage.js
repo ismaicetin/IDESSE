@@ -1,20 +1,9 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { LoginContext } from "../../context/LoginContext"
-// import axios from 'axios';
-// import { API_BASE_URL } from "assets/jss/material-dashboard-pro-react";
-
-// @material-ui/core components
+import { LoginContext } from "../../context/LoginContext" 
 import { makeStyles } from "@material-ui/core/styles";
 import InputAdornment from "@material-ui/core/InputAdornment";
-import Icon from "@material-ui/core/Icon";
-// import foto_web from "../../assets/img/map.png";
-
-// @material-ui/icons
-//import Face from "@material-ui/icons/Face";
-import Email from "@material-ui/icons/Email";
-// import LockOutline from "@material-ui/icons/LockOutline";
-
-// core components
+import Icon from "@material-ui/core/Icon"; 
+import Email from "@material-ui/icons/Email"; 
 import GridContainer from "components/Grid/GridContainer.js";
 import CardIcon from "components/Card/CardIcon.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -145,7 +134,7 @@ function LoginPage(props) {
                                             <InputAdornment position="end">
                                                 <Icon className={classes.inputAdornmentIcon}>
                                                     lock_outline
-                        </Icon>
+                                                </Icon>
                                             </InputAdornment>
                                         ),
                                         type: "password",
@@ -157,10 +146,10 @@ function LoginPage(props) {
                             <CardFooter className={classes.justifyContentCenter}>
                                 <Button color="danger" simple size="lg" block onClick={(e) => handleSubmit(e)}>
                                     GİRİŞ
-                </Button>
+                                </Button>
                                 <Button color="danger" simple size="lg" onClick={(e) => window.location.href = '/forgetPassword'}>
                                     ŞİFREMİ Unuttum
-                </Button>
+                                </Button>
                             </CardFooter>
                             {error && <Alert severity="error">{errorType}</Alert>}
                         </Card>

@@ -1,6 +1,6 @@
 
 import axios from 'axios' 
-export const API_URL = "https://demo.idesse.com"  
+export const API_URL = "https://demo2.idesse.com"  
 function parseError(messages) {
     // error
     if (messages) {

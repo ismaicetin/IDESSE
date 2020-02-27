@@ -1,16 +1,40 @@
 import { http } from './axios'
 
 async function login (sendData)  {  
-  //  return { success : false, errorMsg : "Kullanıcı adı ya da şifreniz hatalıdır." } 
-    
-    return  {
-        success:true,  
-    }
-    // return http.post("/Account/Login", sendData)
+  
+
+    // var sendData= {
+    //     "username": "demo607",
+    //     "password": "1234567",
+    //     "location": "tr"
+    //   }
+
+    var bodyFormData = new FormData();
+    bodyFormData.set('username',sendData.username);
+    bodyFormData.set('password',sendData.password);
+    bodyFormData.set('location', 'tr');
+
+
+
+    return await http.post("/Account/Login", bodyFormData,{
+        headers:{
+            "Content-Type":'multipart/form-data' 
+          }
+    })
+
+
+    // await http.get("/Account/GetUserClm",{
+    //     headers:{
+    //         "Content-Type":'multipart/form-data',
+    //         'Access-Control-Allow-Origin': '*',
+    //         "withCredentials":true
+    //       }
+    // })
+
+
 }
 
-async function getUser () {
-    //return { success : false, errorMsg : "getUser  hatalıdır." } 
+async function getUser () { 
     return {
         success: true, 
         data: {
@@ -23,7 +47,7 @@ async function getUser () {
         }
     }
     
-   // return http.get("/Account/GetUserClm")
+  // return http.get("/Account/GetUserClm")
 }
 
   
