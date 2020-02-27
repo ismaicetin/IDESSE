@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/IDESSE/static/css/main.7c0ab568.chunk.css",
+    "main.js": "/IDESSE/static/js/main.e32a5aa2.chunk.js",
+    "main.js.map": "/IDESSE/static/js/main.e32a5aa2.chunk.js.map",
+    "runtime-main.js": "/IDESSE/static/js/runtime-main.0e443ff1.js",
+    "runtime-main.js.map": "/IDESSE/static/js/runtime-main.0e443ff1.js.map",
+    "static/js/2.0061256c.chunk.js": "/IDESSE/static/js/2.0061256c.chunk.js",
+    "static/js/2.0061256c.chunk.js.map": "/IDESSE/static/js/2.0061256c.chunk.js.map",
+    "index.html": "/IDESSE/index.html",
+    "precache-manifest.71dfc8aa938a15a9ad4c21c53acbbafb.js": "/IDESSE/precache-manifest.71dfc8aa938a15a9ad4c21c53acbbafb.js",
+    "service-worker.js": "/IDESSE/service-worker.js",
+    "static/css/main.7c0ab568.chunk.css.map": "/IDESSE/static/css/main.7c0ab568.chunk.css.map",
+    "static/js/2.0061256c.chunk.js.LICENSE.txt": "/IDESSE/static/js/2.0061256c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e443ff1.js",
+    "static/js/2.0061256c.chunk.js",
+    "static/css/main.7c0ab568.chunk.css",
+    "static/js/main.e32a5aa2.chunk.js"
+  ]
+}
